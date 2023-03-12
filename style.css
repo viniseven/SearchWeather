@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --fc-periwinke: #C2BFF4;
+    --fc-white: #FFFFFF;
+    --fc-lavender: #E7E6FB;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #29292A;
+   
+}
+
+section{
+    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#climate-content{
+    background: url(assets/Background.svg);
+    background-size: cover;
+    
+    width: 48rem;
+    height: 48rem;
+    padding: 3.2rem;
+    
+    border-radius: 10px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#climate-content > img{
+    position: absolute;
+    top: -6rem;
+    left: -5rem;
+}
+
+#form-input-location{
+    position: absolute;
+    right: 3.2rem;
+    display: flex;
+    gap: 1rem;
+}
+input, button{
+    background: rgba(102, 96, 200, 0.6);
+    border: none;
+    border-radius: 6px;
+    
+    height: 3rem;
+
+    color: var(--fc-white);
+    font-family: 'Lato', sans-serif;
+    
+}
+input{
+    padding-left: 2rem; 
+}
+
+input:focus{
+    outline: 0;
+}
+
+input::placeholder{
+    color: var(--fc-white);
+    opacity: 0.6;
+}
+
+button{
+    cursor: pointer;
+    padding: 1rem;
+}
+
+#location span{
+    color: var(--fc-periwinke);
+    font-size: 1.4rem;
+    line-height: 17px;
+}
+
+#temperature{
+    margin: 13rem auto 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#temperature > span:first-child {
+    color: var(--fc-white);
+    font-size: 8.8rem;
+    font-weight: 700;
+    line-height: 106px;
+}
+
+#min-max{
+    font-size: 2rem;
+    line-height: 24px;
+    color: var(--fc-periwinke);
+}
+
+#min-max span:first-child{
+    color: var(--fc-white);
+}
+
+#content-statistics{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+
+    height: 6rem;
+}
+
+#content-statistics > div{
+   padding: 1.2rem 0;
+
+   background: rgba(102, 96, 200, 0.6);
+   border-radius: 6px;
+   width: 14.6rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+
+#content-statistics span{
+    color: var(--fc-lavender);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 14px;
+    opacity: 0.7;
+}
+
+#content-statistics > div div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#content-statistics > div div:nth-child(2) span:last-child{
+    color: var(--fc-lavender);
+    font-size: 1.8rem;
+    line-height: 22px;
+    opacity: 1;
+}
