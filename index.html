@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        <script src="js/script.js" defer></script>
         <title>Document</title>
     </head>
 
@@ -15,15 +15,15 @@
                 <img src="assets/cloud.svg" alt="">
                 <div id="form-input-location">
                     <input type="text" name="" id="searchInput" placeholder="Insira a Cidade">
-                    <button>Pesquisar</button>
+                    <button id="btn-search">Pesquisar</button>
                 </div>
 
                 <div id="temperature">
-                    <span>18</span>
+                    <p id="temp-element"><span>18</span>&deg;</p>
                     
                     <div id="min-max">
-                        <span>22°</span>
-                        <span>16°</span>
+                        <p id="temp-max-element"><span>22</span>&deg;</p>
+                        <p id="temp-min-element"><span>16</span>&deg;</p>
                     </div>                 
                 </div>
 
@@ -31,16 +31,16 @@
                     <div>
                         <img src="assets/wind.svg" alt="">
                         <div>
-                            <span>Vento</span>
-                            <span>17 km/h</span>
+                            <p>Vento</p>
+                            <p id="wind-speed"><span>17</span>km/h</p>
                         </div>      
                     </div>
 
                     <div>
                         <img src="assets/umidity.svg" alt="">
                         <div>
-                            <span>Umidade</span>
-                            <span>31%</span>
+                            <p>Umidade</p>
+                            <p id="humidity"><span>22</span>%</p>
                         </div>
                         
                     </div>
@@ -48,8 +48,8 @@
                     <div>
                         <img src="assets/rain.svg" alt="">
                         <div>
-                            <span>Chuva</span>
-                            <span>10%</span>
+                            <p>Chuva</p>
+                            <p id="rain"><span>10</span>%</p>
                         </div>    
                     </div>
                 </div>

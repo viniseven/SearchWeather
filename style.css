@@ -97,20 +97,24 @@ button{
     align-items: center;
 }
 
-#temperature > span:first-child {
+#temperature > p:first-child {
     color: var(--fc-white);
     font-size: 8.8rem;
     font-weight: 700;
     line-height: 106px;
+    margin-left: 3rem;
 }
 
 #min-max{
     font-size: 2rem;
     line-height: 24px;
     color: var(--fc-periwinke);
+
+    display: flex;
+    gap: 2rem;
 }
 
-#min-max span:first-child{
+#min-max p:first-child{
     color: var(--fc-white);
 }
 
@@ -133,12 +137,15 @@ button{
    align-items: flex-start;
 }
 
-#content-statistics span{
+#content-statistics p{
     color: var(--fc-lavender);
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 14px;
-    opacity: 0.7;
+}
+
+#content-statistics > div :first-child{
+    font-size: 1.2rem;
 }
 
 #content-statistics > div div:nth-child(2){
