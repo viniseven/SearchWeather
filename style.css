@@ -90,31 +90,36 @@ button{
 }
 
 #temperature{
-    margin: 13rem auto 0;
-    
+    margin: 10rem auto 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    text-align: center;
 }
 
-#temperature > p:first-child {
+#name-city, #country-city{
+    color: var(--fc-white);
+    font-size: 2rem;
+}
+
+#temp-element{
     color: var(--fc-white);
     font-size: 8.8rem;
     font-weight: 700;
     line-height: 106px;
-    margin-left: 3rem;
 }
 
-#min-max{
+#temperature > div{
     font-size: 2rem;
     line-height: 24px;
     color: var(--fc-periwinke);
 
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
-#min-max p:first-child{
+#temp-max-element{
     color: var(--fc-white);
 }
 
