@@ -18,6 +18,7 @@ const getDataGeolocationApi = async(city) => {
 
     const dataCity = data[0]
     getDataWeather(dataCity)
+    console.log(dataCity)
 }
 
 const getDataWeather = async(dataCity) => {
