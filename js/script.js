@@ -10,7 +10,6 @@ const nameCityElement = document.querySelector('#name-city')
 const nameStateElement = document.querySelector('#country-city')
 const imgWeather = document.getElementById('#image-weather')
 
-const apikey = '07187a0404001db9ea0153b19efb1d22'
 
 
 btnSearch.addEventListener('click', (e) => {
